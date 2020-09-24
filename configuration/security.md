@@ -83,7 +83,7 @@ Placing `sudo` in front of a command runs it as a superuser, and by default, tha
 To force `sudo` to require a password, enter:
 
 ```bash
-sudo visudo /etc/sudoers.d/010_pi-nopasswd
+sudo visudo -f /etc/sudoers.d/010_pi-nopasswd
 ```
 
 and change the `pi` entry (or whichever usernames have superuser rights) to:
